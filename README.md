@@ -1,2 +1,3 @@
 # coding_way_to_CSP
-learn in a week
+day by day
+bit by bit
