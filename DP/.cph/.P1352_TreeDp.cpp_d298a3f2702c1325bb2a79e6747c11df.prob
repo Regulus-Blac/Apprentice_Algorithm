@@ -1,0 +1,1 @@
+{"name":"Local: P1352_TreeDp","url":"d:\\Study\\Algorithm\\DP\\P1352_TreeDp.cpp","tests":[{"id":1765867322385,"input":"7\n1\n1\n1\n1\n1\n1\n1\n1 3\n2 3\n6 4\n7 4\n4 5\n3 5","output":"5"},{"id":1765870400723,"input":"1\n0","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Algorithm\\DP\\P1352_TreeDp.cpp","group":"local","local":true}

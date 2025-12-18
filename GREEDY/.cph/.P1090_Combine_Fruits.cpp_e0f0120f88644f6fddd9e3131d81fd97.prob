@@ -1,0 +1,1 @@
+{"name":"Local: P1090_Combine_Fruits","url":"d:\\Study\\Algorithm\\GREEDY\\P1090_Combine_Fruits.cpp","tests":[{"id":1765941173833,"input":"3 \n1 2 9 ","output":"15"},{"id":1765941676420,"input":"5\n8 3 1 9 4","output":"53"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Algorithm\\GREEDY\\P1090_Combine_Fruits.cpp","group":"local","local":true}

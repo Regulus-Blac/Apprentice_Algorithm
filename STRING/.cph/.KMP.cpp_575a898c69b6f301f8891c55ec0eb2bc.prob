@@ -1,0 +1,1 @@
+{"name":"Local: KMP","url":"d:\\Study\\Algorithm\\字符串\\KMP.cpp","tests":[{"id":1762269462601,"input":"ABABABC\nABA","output":"1\n3\n0 0 1 "},{"id":1762270161700,"input":"ababcabcabababd\nababd","output":"11\n0 0 1 2 0 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Algorithm\\字符串\\KMP.cpp","group":"local","local":true}
