@@ -186,27 +186,27 @@ n皇后
 
 # 实验课记录
 
-## 共 8 / 18（22）
+## 共 12 / 18（22）
 
-### 分治
+### 1.分治
 
 2（P2678 黄 P1242蓝）
 
-## 动态规划
+### 2.动态规划
 
 6（P4017黄 P1434黄 P4999绿 P1220绿 P1854黄 P1352黄）
 
-### 贪心
+### 3. 贪心
 
 4（P1106黄 P1080绿 P1658黄 P1090黄）
-git init
-git sparse-checkout init -cone
-git sparse-checkout set test
-git remote add origin 网址
-git pull orogin master
-就把对面的子文件夹test搞过来了
 
+### 4、5.搜索与图论
 
+7（）
+
+### 6.特殊数据结构
+
+3（）
 
 <font color="orange">Period 1</font>
 
@@ -226,9 +226,7 @@ git pull orogin master
 
 9.| 12  | **P1106** | 删数问题 | 贪心  |     |
 10.| 13  | **P1080** | 国王游戏 | 贪心  |     |
-| 14  | **P2512** | 糖果传递 | 贪心  | 中位数 |
-| 15  | **P2127** | 序列排序 | 贪心  |     |
-| 16  | **P1658** | 购物  | 贪心  |     |
+11.| 16  | **P1658** | 购物  | 贪心  |     |
 12.| 17  | **P1090** | 合并果子 | 贪心  | 优先队列 
 
 <font color="orange">Period 4 & 5</font>
@@ -269,5 +267,7 @@ git pull orogin master
 | 48  | **P1726** | 上白泽慧音 | Tarjan |     |
 | 49  | **P3379** | 最近公共祖先（LCA） | LCA/RMQ | 倍增法、欧拉序+ST表、Tarjan |
 | 50  | **P3865** | ST 表 && RMQ 问题 | RMQ | ST 表 |
+
+
 
 
