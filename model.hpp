@@ -18,10 +18,10 @@ int fastRead()
     return minus? -ret : ret;   
 }
 //自写最大最小
-int fastMax(int a,int b){
+inline int fastMax(int a,int b){
     return a > b? a : b;
 }
-int fastMin(int a,int b){
+inline int fastMin(int a,int b){
     return a < b ? a : b;
 }
 //正数高精度计算
@@ -204,3 +204,23 @@ public:
         return *this;
     }
 };
+//最大公因数最小公倍数
+int gcd(int a,int b)                             //改进的更相减损 log(max(a,b)),0次取模
+{
+    if(a == b)  return a;
+
+    if(((a & 1) == 0) && ((b & 1) == 0)){
+        return gcd(a >> 1, b >> 1) << 1;
+    }
+    else if(((a & 1) == 0) && ((b & 1) == 1)){
+        return gcd(a >> 1, b);
+    }
+    else if(((b & 1) == 0) && ((a & 1) == 1)){
+        return gcd(a, b >> 1);
+    }
+    else{
+        if(a > b)   return gcd(a-b, b);
+        else        return gcd(a, b-a);
+    }
+}
+int lcm(int a,int b){return a / gcd(a,b) * b;}
