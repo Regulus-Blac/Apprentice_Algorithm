@@ -24,6 +24,13 @@ inline int fastMax(int a,int b){
 inline int fastMin(int a,int b){
     return a < b ? a : b;
 }
+//对数运算
+int fastLog2(int x){
+    int ret = 0;
+    while((1 << ret) <= (x >> 1) )     ++ ret;
+    //这么写是为了防止溢出
+    return ret;
+}
 //正数高精度计算
 //实现更大可以令BASE = 10000使得数组中每一位存储0-9999
 const int MAX_HIGHPRECISION_LEN = 5000;
