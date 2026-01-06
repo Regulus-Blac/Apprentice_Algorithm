@@ -1,12 +1,12 @@
 /*AT_chokudai_S001_h*/
-/*这里的单增理解为大于*/
+/*最长单增子序列 这里的单增理解为大于*/
 #include "../model.hpp"
 
 #define INF 114514191
 const int N = 2e5 + 10;
 
 int n, ans;
-int dp[N];
+int dp[N];//e[j]记录长度为j的LIS末位最小值
 
 void update(int x) {
     int l = 0, r = ans + 1;
@@ -30,7 +30,10 @@ int main() {
     n = fastRead();
     for(int i = 1; i <= n; ++i) update(fastRead());
     printf("%d", ans);
-    
+    printf("\n");
+    for(int i = 0;i <= ans;++i){
+        printf("%d ",dp[i]);
+    }
     return 0;
 }
 

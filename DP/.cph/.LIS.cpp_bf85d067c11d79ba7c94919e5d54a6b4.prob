@@ -1,0 +1,1 @@
+{"name":"Local: LIS","url":"d:\\Study\\Algorithm\\DP\\LIS.cpp","tests":[{"id":1767513225792,"input":"10\n2 8 4 9 1 6 7 3 0 5","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Study\\Algorithm\\DP\\LIS.cpp","group":"local","local":true}

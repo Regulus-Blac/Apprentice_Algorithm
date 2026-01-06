@@ -230,3 +230,13 @@ int gcd(int a,int b)                             //改进的更相减损 log(max
     }
 }
 int lcm(int a,int b){return a / gcd(a,b) * b;}
+
+
+int main()
+{
+    int n = fastRead();
+    printf("%d",(int)pow(2,n)-2*n);
+}
+
+
+

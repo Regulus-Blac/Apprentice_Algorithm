@@ -68,8 +68,8 @@ signed main()
 {
     L = fastRead(); N = fastRead(); M = fastRead();
 
-    // f1();    //时间复杂度O(NlogL)空间复杂度O(N)
-    f2();
+    f1();    //时间复杂度O(NlogL)空间复杂度O(N)
+    // f2();
 
     return 0;
 }

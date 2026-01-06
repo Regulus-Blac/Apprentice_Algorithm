@@ -89,6 +89,7 @@ int main()
     executor(1);
 
     mode = (cnt[0] < cnt[1]) ? 0 : 1;
+    // printf("%d\n",mode);
     output = true;
     executor(mode);
     printf("%d",cnt[mode]);

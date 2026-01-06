@@ -77,6 +77,7 @@ int main()
     }
 
     printf("%d\n",ans);
+    check_dp();
     output_path(col);
 
     return 0;
