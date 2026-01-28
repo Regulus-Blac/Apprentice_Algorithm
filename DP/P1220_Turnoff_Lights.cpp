@@ -37,6 +37,9 @@ int main()
         //     dp[i][j][1] = fast_min(dp[i][j-1][0] + (dist[j] - dist[i])*others2,dp[i][j-1][1] + (dist[j] - dist[j-1])*others2);
         // }
     }
+    // printf("12 %d %d\n",dp[1][2][0],dp[1][2][1]);
+    // printf("23 %d %d\n",dp[2][3][0],dp[2][3][1]);
+    // printf("13 %d %d\n",dp[1][3][0],dp[1][3][1]);
     ans = fast_min(dp[1][n][0],dp[1][n][1]);
     printf("%d",ans);
     return 0;

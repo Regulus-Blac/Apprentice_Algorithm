@@ -16,7 +16,7 @@ bool visited[MAX][MAX];
 char maze[MAX][MAX];
 int N,M,si,sj,di,dj;
 int dx[4] = {0,1,0,-1},dy[4] = {1,0,-1,0},trans[EXIT][5];
-int pre_i[MAX][MAX],pre_j[MAX][MAX],trans_cnt[MAX];
+int pre_i[MAX][MAX],pre_j[MAX][MAX];/*,trans_cnt[MAX]*/
 
 void input()
 {

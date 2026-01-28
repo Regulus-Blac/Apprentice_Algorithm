@@ -30,6 +30,14 @@ int fastLog2(int x){
     //这么写是为了防止溢出
     return ret;
 }
+ll fastCombination(ll n,ll m)
+{
+    ll res = 1;
+    for(ll i = 1;i <= m;++i){
+        res = res * (n - i + 1) / i;
+    }
+    return res;
+}
 //正数高精度计算
 //实现更大可以令BASE = 10000使得数组中每一位存储0-9999
 const int MAX_HIGHPRECISION_LEN = 5000;
