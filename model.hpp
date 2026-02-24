@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using ll = long long;
 using namespace std;
-//快读
 int fastRead()
 {
     bool minus = 0;
@@ -16,14 +15,13 @@ int fastRead()
     }
     return minus? -ret : ret;   
 }
-//自写最大最小
+// ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 inline int fastMax(int a,int b){
     return a > b? a : b;
 }
 inline int fastMin(int a,int b){
     return a < b ? a : b;
 }
-//对数运算
 int fastLog2(int x){
     int ret = 0;
     while((1 << ret) <= (x >> 1) )     ++ ret;
