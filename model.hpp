@@ -1,10 +1,26 @@
 #include <bits/stdc++.h>
 using ll = long long;
 using namespace std;
+#define fr =fastRead()
+#define fl =fastRead(1)
 int fastRead()
 {
     bool minus = 0;
     int ret = 0;    char c = getchar();
+    while(c < '0' || c > '9'){
+        if(c == '-')    minus = 1;
+        c = getchar();
+    }
+    while(c >= '0' && c <= '9'){
+        ret = (ret << 3) + (ret << 1) + c - '0';
+        c = getchar();
+    }
+    return minus? -ret : ret;   
+}
+ll fastRead(int)
+{
+    bool minus = 0;
+    ll ret = 0;    char c = getchar();
     while(c < '0' || c > '9'){
         if(c == '-')    minus = 1;
         c = getchar();
@@ -22,6 +38,16 @@ inline int fastMax(int a,int b){
 inline int fastMin(int a,int b){
     return a < b ? a : b;
 }
+ll fastpow(ll a,ll b,ll mod)
+{
+    ll ret = 1;
+    while(b){
+        if(b & 1)    ret = (ret * a) % mod;
+        a = (a * a) % mod;
+        b >>= 1;
+    }
+    return ret;
+}
 int fastLog2(int x){
     int ret = 0;
     while((1 << ret) <= (x >> 1) )     ++ ret;
@@ -36,6 +62,27 @@ ll fastCombination(ll n,ll m)
     }
     return res;
 }
+//最大公因数最小公倍数
+int gcd(int a,int b)                             //改进的更相减损 log(max(a,b)),0次取模
+{
+    if(a == b)  return a;
+
+    if(((a & 1) == 0) && ((b & 1) == 0)){
+        return gcd(a >> 1, b >> 1) << 1;
+    }
+    else if(((a & 1) == 0) && ((b & 1) == 1)){
+        return gcd(a >> 1, b);
+    }
+    else if(((b & 1) == 0) && ((a & 1) == 1)){
+        return gcd(a, b >> 1);
+    }
+    else{
+        if(a > b)   return gcd(a-b, b);
+        else        return gcd(a, b-a);
+    }
+}
+int lcm(int a,int b){return a / gcd(a,b) * b;}
+
 //正数高精度计算
 //实现更大可以令BASE = 10000使得数组中每一位存储0-9999
 const int MAX_HIGHPRECISION_LEN = 5000;
@@ -216,23 +263,3 @@ public:
         return *this;
     }
 };
-//最大公因数最小公倍数
-int gcd(int a,int b)                             //改进的更相减损 log(max(a,b)),0次取模
-{
-    if(a == b)  return a;
-
-    if(((a & 1) == 0) && ((b & 1) == 0)){
-        return gcd(a >> 1, b >> 1) << 1;
-    }
-    else if(((a & 1) == 0) && ((b & 1) == 1)){
-        return gcd(a >> 1, b);
-    }
-    else if(((b & 1) == 0) && ((a & 1) == 1)){
-        return gcd(a, b >> 1);
-    }
-    else{
-        if(a > b)   return gcd(a-b, b);
-        else        return gcd(a, b-a);
-    }
-}
-int lcm(int a,int b){return a / gcd(a,b) * b;}
