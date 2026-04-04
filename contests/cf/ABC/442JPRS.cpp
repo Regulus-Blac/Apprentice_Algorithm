@@ -1,3 +1,6 @@
+/*
+E 还没来的急做，只是刚读了题
+*/
 #include <bits/stdc++.h>
 using ll = long long;
 using namespace std;

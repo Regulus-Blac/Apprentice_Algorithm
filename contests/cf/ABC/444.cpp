@@ -1,3 +1,6 @@
+/*
+状态糟糕，只做了两道题，剩下的都没看
+*/
 #include <bits/stdc++.h>
 #define fr =fastRead()
 using ll = long long;
